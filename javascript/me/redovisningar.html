@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html><head>
+<title>Anders Åkesson | DV1483 Ht13 Lp2 Javascript, jQuery och AJAX med HTML5 och PHP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="" />
+<meta name="copyright" content="" />
+<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />                  <!-- KICKSTART -->
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />                          <!-- CUSTOM STYLES -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/kickstart.js"></script>                                  <!-- KICKSTART -->
+<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+
+<!-- Menu Horizontal -->
+<ul class="menu">
+<li><a href="index.html">Start</a></li>
+<!--<li><a href="">Item 2</a></li>-->
+<li><a href=""><span class="icon" data-icon="R"></span>Kursmoment</a>
+	<ul>
+	<li><a href="../kmom01/lekplats/mall/"><span class="icon" data-icon="G"></span>Testmall</a></li>
+	<li><a href=""><span class="icon" data-icon="A"></span>Kursmoment 1</a>
+		<ul>
+		<li><a href="../kmom01/lekplats/hello-world/hello.html"><span class="icon" data-icon="Z"></span>“Hello World” i JavaScript</a></li>
+		<li><a href="../kmom01/lekplats/resize-element/"><span class="icon" data-icon="k"></span>Ändra storleken på ett element</a></li>
+		<li><a href="../kmom01/lekplats/move-around-css-sprite-using-css3-transitions/"><span class="icon" data-icon="J"></span>Flytta en gubbe på skärmen</a></li>
+		<li><a href="../kmom01/lekplats/css3-2d-transforms-with-transitions/"><span class="icon" data-icon="="></span>CSS3 Transitions och 2D Transforms</a></li>
+		</ul>
+	</li>
+	<li><a href=""><span class="icon" data-icon="B"></span>Kursmoment 2</a>
+		<ul>
+		<li><a href="../kmom01/lekplats/#"><span class="icon" data-icon="Z">Uppgift 1</span></a></li>
+		<li><a href="../kmom01/lekplats/#"><span class="icon" data-icon="k"></span>Uppgift 2</a></li>
+		<li><a href="../kmom01/lekplats/#"><span class="icon" data-icon="J"></span>Uppgift 3</a></li>
+		<li><a href="../kmom01/lekplats/#"><span class="icon" data-icon="="></span>Uppgift 4</a></li>
+		</ul>
+	</li>
+	<!--<li class="divider"><a href=""><span class="icon" data-icon="T"></span>li.divider</a></li>-->
+	</ul>
+</li>
+<li class="current"><a href=""><span class="icon" data-icon="R"></span>Redovisningar</a>
+		<ul>
+		<li><a href="#kmom01"><span class="icon" data-icon="Z"></span>Kursmoment 1</a></li>
+		<li><a href="#"><span class="icon" data-icon="k"></span>Kursmoment 2</a></li>
+		<li><a href="#"><span class="icon" data-icon="J"></span>Kursmoment 3</a></li>
+		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 4</a></li>
+		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 5</a></li>
+		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 6</a></li>
+		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 7</a></li>
+		</ul>
+<li><a href="http://andyweb.info" target="blank">Andyweb</a></li>
+</ul>
+
+<div class="grid">
+	
+<!-- ===================================== END HEADER ===================================== -->
+	 
+<div class="col_12">
+<h1>Redovisningar | DV1483 Ht13 Lp2 Javascript, jQuery och AJAX med HTML5 och PHP</h1>
+	<div class="col_9">
+	<div id="kmom01"><h3>Kursmoment 1</h3>
+	 <p>Inga större problem i det här första kursmomentet som ju förstås mest var en introduktion. Som vanligt i de här kurserna när det blir mycket kopierande av kod så brukar jag få lite problem med sökvägar när det inte är helt klart var vissa filer skall ligga. Man tittar på källkoden och så saknas vissa mappar där för mos och får man gå tillbaks och se till så att allt ligger där det ska. 
+	I övrigt så har ingenting i övningarna gett mig några problem. Det är bara att åka med på resan.</p>
+	<li><strong>Vilken utvecklingsmiljö använder du?</strong></li>
+	<ul>Jag sitter i min hem miljö på en Mac (med nya, fräscha Mavericks OS för övrigt) så jag använder MAMP för min lokala utveckling och laddar upp på studentservern med hjälp av Filezilla. Som text editor använder jag nu Sublime Text (tror att jag är inne på version 3 nu).</ul>
+	<li><strong>Hur väl känner du till JavaScript?</strong></li>
+	<ul>Jag har använt mig av javascript tidigare, genom min egen sida och på lite andra hobbyprojekt som jag sysselsatt mig med, men det handlar mer om att jag tagit kod snuttar eller att jag använt mig av bibliotek för att få lite effekter. Jag har gått igenom javascript kursen på <a href="http://www.codecademy.com/" target="blank">Codeacademy</a> men jag har aldrig direkt kodat i javascript, gjort ett spel eller så.</ul>
+	<li><strong>Vilken uppfattning har du av JavaScript så här långt?</strong></li>
+	<ul>Javascript är uppenbarligen kraftfullt framförallt för webben. Det är förstås något man måste kunna för att kunna utveckla för webben. Jag kan dock se en utveckling där javascript till stor del ersätts av en teknologi som CSS3 som kanske är mer lättvikt och kanske också enklare att använda sig. Vart eftersom allt fler mobila applikationer byggs mer och mer i html och css så kanske man kommer att vilja försöka komma ifrån javascript men javascript kommer förstås vara där uppe bland de viktigaste teknikerna för webb utveckling inom den närmsta framtiden.
+	Jag kan tycka att det är ett lite rörigt språk vissa gånger, men det är väl en vanesak. Kommer man från andra mer strikta språk så kan det kännas lite konstigt att hantera variabler på det sättet som görs i javascript och likaså hur Object fungerar, t.ex.</ul>
+	<li><strong>Berätta vilka exempelprogram du gjorde och länka till dem.</strong></li>
+	<ul>Jag gjorde de exempel program som ingick i introduktionsövningen. Det var väl det kursmomentet gick ut på…? </ul>
+	<li><strong>Beskriv hur du gjort din baddie och vilka konster den kan.</strong></li>
+	<ul>Jag tittade på vilka baddies som tidigare studenter använt och snodde helt sonika en av dem. Den kan göra det som ingick i övningen plus någon slags saltomortal (ja, den snurrar runt i alla fall, vet inte om det var det som var tanken).</ul>
+	<li><strong>Gjorde du extrauppgiften och utbildade din baddie med något extra?</strong></li>
+	<ul>Som sagt; den snurrar runt i någon slags rörelse. </ul>
+		<li><strong>Länkar</strong>
+		<ul>
+		<li><a href="../kmom01/lekplats/hello-world/hello.html">“Hello World” i JavaScript</a></li>
+		<li><a href="../kmom01/lekplats/resize-element/"></span>Ändra storleken på ett element</a></li>
+		<li><a href="../kmom01/lekplats/move-around-css-sprite-using-css3-transitions/">Flytta en gubbe på skärmen</a></li>
+		<li><a href="../kmom01/lekplats/css3-2d-transforms-with-transitions/">CSS3 Transitions och 2D Transforms</a></li>
+		<li><a href="http://jsfiddle.net/andy_akesson/JzG9b/">Mitt 'Hello World' på JSFiddle</a></li>
+		</ul>
+	</li>
+	 <hr />
+    </div>
+	</div>
+	
+	<div class="col_3">
+	
+	<h5>Sample Icons</h5>
+	<a href="http://twitter.com/AndyAkesson" target="blank"><i class="icon-twitter-sign icon-4x"></i></a>
+	<a href="http://www.linkedin.com/pub/anders-%C3%A5kesson/26/512/a02" target="blank"><i class="icon-linkedin-sign icon-4x"></i></a>
+	<a href="https://github.com/AndyAkesson" target="blank"><i class="icon-github-sign icon-4x"></i></a>
+	
+	<span class="icon social x-large darkgray" data-icon="1"></span>
+	<span class="icon social x-large black" data-icon="w"></span>
+	<span class="icon x-large pink" data-icon="*"></span>
+	<span class="icon social x-large green" data-icon="v"></span>
+	
+	<h5>RSS feed from Andyweb</h5>
+	<a class="button orange small" href="http://andyweb.info/blog/?feed=rss2" target="blank"><i class="icon-rss"></i> RSS</a>
+	</div>
+
+</div>
+
+</div><!-- END GRID -->
+
+<!-- ===================================== START FOOTER ===================================== -->
+<div class="clear"></div>
+<div id="footer">
+&copy; Copyright 2013 All Rights Reserved. Nah, just fuckin witcha, there aint no copyright. This website was built with <a href="http://www.99lime.com" target="blank">HTML KickStart</a>
+</div>
+
+</body>
+</html>
