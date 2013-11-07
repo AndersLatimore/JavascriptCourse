@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content="" />
-<meta name="copyright" content="" />
 <link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />                  <!-- KICKSTART -->
 <link rel="stylesheet" type="text/css" href="style.css" media="all" />                          <!-- CUSTOM STYLES -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -20,6 +19,7 @@
 <li><a href=""><span class="icon" data-icon="R"></span>Kursmoment</a>
 	<ul>
 	<li><a href="../kmom01/lekplats/mall/"><span class="icon" data-icon="G"></span>Testmall</a></li>
+	<li class="divider"><span class="icon" data-icon="T"></span></li>
 	<li><a href=""><span class="icon" data-icon="A"></span>Kursmoment 1</a>
 		<ul>
 		<li><a href="../kmom01/lekplats/hello-world/hello.html"><span class="icon" data-icon="Z"></span>“Hello World” i JavaScript</a></li>
@@ -28,12 +28,18 @@
 		<li><a href="../kmom01/lekplats/css3-2d-transforms-with-transitions/"><span class="icon" data-icon="="></span>CSS3 Transitions och 2D Transforms</a></li>
 		</ul>
 	</li>
+	<li class="divider"><span class="icon" data-icon="T"></span></li>
 	<li><a href=""><span class="icon" data-icon="B"></span>Kursmoment 2</a>
 		<ul>
-		<li><a href="../kmom01/lekplats/#"><span class="icon" data-icon="Z">Uppgift 1</span></a></li>
-		<li><a href="../kmom01/lekplats/#"><span class="icon" data-icon="k"></span>Uppgift 2</a></li>
-		<li><a href="../kmom01/lekplats/#"><span class="icon" data-icon="J"></span>Uppgift 3</a></li>
-		<li><a href="../kmom01/lekplats/#"><span class="icon" data-icon="="></span>Uppgift 4</a></li>
+		<li><a href="../kmom01/lekplats/literals-and-their-type-using-typeof/"><span class="icon" data-icon="Z">Literals &amp; their types</span></a></li>
+		<li><a href="../kmom01/lekplats/datatypes-and-values-using-numbers/"><span class="icon" data-icon="k"></span>Datatypes &amp; values using numbers</a></li>
+		<li><a href="../kmom01/lekplats/datatypes-and-values-using-strings/"><span class="icon" data-icon="J"></span>Datatypes &amp; values using strings</a></li>
+		<li><a href="../kmom01/lekplats/throwing-dice-using-functions/"><span class="icon" data-icon="="></span>Throwing dice using functions</a></li>
+		<li><a href="../kmom01/lekplats/pushing-the-ball/"><span class="icon" data-icon="="></span>Pushing the ball</a></li>
+		<li><a href="../kmom01/lekplats/boulder-dash-with-arrays/"><span class="icon" data-icon="="></span>Boulder dash</a></li>
+		<li><a href="../kmom01/lekplats/date/"><span class="icon" data-icon="="></span>Date</a></li>
+		<li><a href="../kmom01/lekplats/error-handling/"><span class="icon" data-icon="="></span>Error handling</a></li>
+		<li><a href="../kmom01/lekplats/gambling-roulette-using-functions/"><span class="icon" data-icon="="></span>Roulette</a></li>
 		</ul>
 	</li>
 	<!--<li class="divider"><a href=""><span class="icon" data-icon="T"></span>li.divider</a></li>-->
@@ -42,7 +48,7 @@
 <li class="current"><a href=""><span class="icon" data-icon="R"></span>Redovisningar</a>
 		<ul>
 		<li><a href="#kmom01"><span class="icon" data-icon="Z"></span>Kursmoment 1</a></li>
-		<li><a href="#"><span class="icon" data-icon="k"></span>Kursmoment 2</a></li>
+		<li><a href="#kmom02"><span class="icon" data-icon="k"></span>Kursmoment 2</a></li>
 		<li><a href="#"><span class="icon" data-icon="J"></span>Kursmoment 3</a></li>
 		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 4</a></li>
 		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 5</a></li>
@@ -87,10 +93,9 @@
 	 <hr />
     </div>
 	</div>
-	
+
 	<div class="col_3">
 	
-	<h5>Sample Icons</h5>
 	<a href="http://twitter.com/AndyAkesson" target="blank"><i class="icon-twitter-sign icon-4x"></i></a>
 	<a href="http://www.linkedin.com/pub/anders-%C3%A5kesson/26/512/a02" target="blank"><i class="icon-linkedin-sign icon-4x"></i></a>
 	<a href="https://github.com/AndyAkesson" target="blank"><i class="icon-github-sign icon-4x"></i></a>
@@ -102,6 +107,49 @@
 	
 	<h5>RSS feed from Andyweb</h5>
 	<a class="button orange small" href="http://andyweb.info/blog/?feed=rss2" target="blank"><i class="icon-rss"></i> RSS</a>
+	</div>
+
+	<div class="col_9">
+	<div id="kmom02"><h3>Kursmoment 2</h3>
+	<p>Först och främst ska jag be om ursäkt att hela min katalogstruktur har hamnat under kmom01 vilket kanske inte är helt logiskt. Det är bara för att jag insåg att det var bättre att spara hela “lekplatsen” på samma ställe så jag slipper kopiera mallen till en massa andra mappar. Sen är jag för lat för att ändra namn på basmappen så den får heta kmom01 framöver också.</p>
+
+	<p>Det var inget litet kursmoment det här. Hade jag verkligen gjort allt helt på egen hand hade det nog tagit hela kursen för det var väldigt mycket att ta in på en gång, men också lärorikt. Försökte så gott jag kunde att göra så mycket som möjligt utan att titta på mos kod men i vissa övningar fick jag fuska en hel del. 
+	De första övningarna var inga större problem, de med typeof, Math, strängar och “tärningar”. Nödvändiga saker att kunna känns det som.</p>
+
+	<p>När det kom till övningen med bollen hade jag problem direkt med att få bollen att synas överhuvudtaget. Jag gjorde som jag brukar och kollade i forumet hur tidigare studenter gjort, ändrade lite och så fungerade det. 
+	Jag försökte länge med att kunna dra bollen till en ny plats men lyckades inte med det. Men det går i alla fall att dra bollen så att den åker åt andra hållet, även om inte bollen följer med när man drar den (det där förstod jag knappt själv men du ser hur det funkar om du provar).</p>
+
+	<p>För Boulder Dash hade jag också problem med att visa elementen och fick titta i forumet igen. När jag väl fick det att fungera så gjorde jag en variant med en labyrint som man kan flytta runt baddien i, inspirerad av tidigare studenters lösningar. Ganska mycket jobb om man ska skriva hela spelplanen som två så pass stora arrayer. Hade varit smidigare med någon slags loop för att fylla spelplanen men då hade det varit svårt att få elementen där man vill ha dem. Jag kom i alla fall inte på någon bättre lösning än den som mos använder.</p>
+
+	<p>Lite små övningar sedan med datum(en rad kod), e-mail validering och error handling (<code>try-catch</code>). Hade lite problem i error handling övningen med att funktionen jag använde inte hade deklarerats och därför inte kunde användas. Jag fick då använda <code>window.function</code> för utföra exakt samma sak. Tycker det är lite konstigt att jag inte haft det problemet i någon annan övning men det var bra att jag fick se det. Lämpligt nog kom också en förklaring direkt efter det i övningen.</p>
+
+	<p>Efter det var det roulette och den är i princip exakt så som mos variant är. Jag visste knappt var jag skulle börja och förstod inte så mycket om hur det var tänkt att fungera. Så min lösning har mest kosmetiska skillnader mot hur mos kod är upplagd. Jag ändrade så att “bankroll” inte kan ändras utan att trycka på knappen “reset” och jag gjorde så att man inte kan trycka på “roll” samtidigt som man väntar på en tidigare roll. 
+	Jag fastnade ett tag på hur jag skulle kunna göra ett roulette-hjul istället men gav upp efter ett tag när jag insåg hur pass krångligt det hade varit att få siffrorna att ligga i en cirkel istället för ett bord. Det finns lösningar där ute dock men jag känner inte för att ge mig på det just nu.</p>
+
+	<li>Vilka funktioner har du lagt till i din variant av <code>mos.js</code>?</li>
+
+	<ul>Endast random funktionen.</ul>
+
+	<li>Gjorde du något extra arbete på spelplanen med Boulder Dash, eller gjorde du kanske en egen spelvariant?</li>
+
+	<ul>Jag ändrade som sagt en del, så som jag beskriver ovan.</ul>
+
+	<li>Gjorde du något extra på Roulettespelet?</li>
+
+	<ul>Inte mer än vad jag redan beskrivit.</ul>
+
+	<li><strong>Länkar</strong>
+	<ul><a href="http://www.student.bth.se/~anap12/javascript/kmom01/lekplats/literals-and-their-type-using-typeof/">Literals and their type using typeof</a></ul>
+	<ul><a href="http://www.student.bth.se/~anap12/javascript/kmom01/lekplats/datatypes-and-values-using-numbers/">Datatypes and their values</a></ul>
+	<ul><a href="http://www.student.bth.se/~anap12/javascript/kmom01/lekplats/datatypes-and-values-using-strings/">Datatypes and values using strings</a></ul>
+	<ul><a href="http://www.student.bth.se/~anap12/javascript/kmom01/lekplats/throwing-dice-using-functions/">Roll The Dice - Using Functions in JavaScript</a></ul>
+	<ul><a href="http://www.student.bth.se/~anap12/javascript/kmom01/lekplats/pushing-the-ball/">Pushing the ball</a></ul>
+	<ul><a href="http://www.student.bth.se/~anap12/javascript/kmom01/lekplats/boulder-dash-with-arrays/">Boulder Dash</a></ul>
+	<ul><a href="http://www.student.bth.se/~anap12/javascript/kmom01/lekplats/date/">Date</ul>
+	<ul><a href="http://www.student.bth.se/~anap12/javascript/kmom01/lekplats/error-handling/">Error handling</a></ul>
+	<ul><a href="http://www.student.bth.se/~anap12/javascript/kmom01/lekplats/gambling-roulette-using-functions/">Roulette</a></ul>
+	</li>
+	</div>
 	</div>
 
 </div>
