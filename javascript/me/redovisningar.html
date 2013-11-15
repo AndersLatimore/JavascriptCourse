@@ -46,6 +46,14 @@
 	<li><a href=""><span class="icon" data-icon="B"></span>Kursmoment 3</a>
 		<ul>
 		<li><a href="../kmom01/lekplats/nine-small-examples-to-get-started-with-jquery"><span class="icon" data-icon="Z">Nine examples to get started with jQuery</span></a></li>
+		<li><a href="../html5up-overflow/"><span class="icon" data-icon="">Slide Up Down jQuery plugin</span></a></li>
+		</ul>
+	</li>
+	<li class="divider"><span class="icon" data-icon="T"></span></li>
+	<li><a href=""><span class="icon" data-icon="B"></span>Kursmoment 4</a>
+		<ul>
+		<li><a href="../kmom01/lekplats/get-marvin-quotes-using-ajax"><span class="icon" data-icon="Z">Get Marvin quotes using Ajax</span></a></li>
+		<li><a href="../kmom01/lekplats/shopping-cart-using-jquery-ajax"><span class="icon" data-icon="">Shopping cart using jQuery and Ajax</span></a></li>
 		</ul>
 	</li>
 	<!--<li class="divider"><a href=""><span class="icon" data-icon="T"></span>li.divider</a></li>-->
@@ -55,8 +63,8 @@
 		<ul>
 		<li><a href="#kmom01"><span class="icon" data-icon="Z"></span>Kursmoment 1</a></li>
 		<li><a href="#kmom02"><span class="icon" data-icon="k"></span>Kursmoment 2</a></li>
-		<li><a href="#"><span class="icon" data-icon="J"></span>Kursmoment 3</a></li>
-		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 4</a></li>
+		<li><a href="#kmom03"><span class="icon" data-icon="J"></span>Kursmoment 3</a></li>
+		<li><a href="#kmom04"><span class="icon" data-icon="="></span>Kursmoment 4</a></li>
 		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 5</a></li>
 		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 6</a></li>
 		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 7</a></li>
@@ -132,15 +140,15 @@
 	<p>Efter det var det roulette och den är i princip exakt så som mos variant är. Jag visste knappt var jag skulle börja och förstod inte så mycket om hur det var tänkt att fungera. Så min lösning har mest kosmetiska skillnader mot hur mos kod är upplagd. Jag ändrade så att “bankroll” inte kan ändras utan att trycka på knappen “reset” och jag gjorde så att man inte kan trycka på “roll” samtidigt som man väntar på en tidigare roll. 
 	Jag fastnade ett tag på hur jag skulle kunna göra ett roulette-hjul istället men gav upp efter ett tag när jag insåg hur pass krångligt det hade varit att få siffrorna att ligga i en cirkel istället för ett bord. Det finns lösningar där ute dock men jag känner inte för att ge mig på det just nu.</p>
 
-	<li>Vilka funktioner har du lagt till i din variant av <code>mos.js</code>?</li>
+	<li><strong>Vilka funktioner har du lagt till i din variant av <code>mos.js</code>?</strong></li>
 
 	<ul>Endast random funktionen.</ul>
 
-	<li>Gjorde du något extra arbete på spelplanen med Boulder Dash, eller gjorde du kanske en egen spelvariant?</li>
+	<li><strong>Gjorde du något extra arbete på spelplanen med Boulder Dash, eller gjorde du kanske en egen spelvariant?</strong></li>
 
 	<ul>Jag ändrade som sagt en del, så som jag beskriver ovan.</ul>
 
-	<li>Gjorde du något extra på Roulettespelet?</li>
+	<li><strong>Gjorde du något extra på Roulettespelet?</strong></li>
 
 	<ul>Inte mer än vad jag redan beskrivit.</ul>
 
@@ -155,6 +163,79 @@
 	<ul><a href="http://www.student.bth.se/~anap12/javascript/kmom01/lekplats/error-handling/">Error handling</a></ul>
 	<ul><a href="http://www.student.bth.se/~anap12/javascript/kmom01/lekplats/gambling-roulette-using-functions/">Roulette</a></ul>
 	</li>
+	<hr />
+	</div>
+	</div>
+
+	<div class="col_9">
+	<div id="kmom03"><h3>Kursmoment 3</h3>
+	<p>Nytt kursmoment med jQuery denna gång. Jag följde övingen så gott jag kunde så mina exempel ser likadana ut som övningen, även om koden skiljer sig något på vissa av exemplen.
+	De första övningarna var inga större problem att göra på egen hand efter de instruktioner man fick av mos. Välja element och “toggla” mellan dem blir ju löjligt enkelt med jQuery, t.ex.</p>
+
+	<p>Övningen med event propagering var lite konstig men jag antar att den bara visar ett användningsområde för den funktionen. 
+	Lägga till och ta bort element var heller inga problem; jQuery gör det jätte enkelt.
+	I övningen med att läsa och ändra storlek hade jag förvånansvärt stora problem. Jag trodde att det skulle gå hur enkelt som helst men jag fick titta på mos exempel här och kopiera det mesta. Så här i efterhand känns det lite pinsamt att jag hade problem med den övningen för det är verkligen inte svårt, men ibland fungerar min hjärna och jag inte så bra ihop.
+	Femte övningen var simpel, inga problem.</p>
+
+	<p>Med lightbox-övningen försökte jag själv i början men jag kom ingen vart så jag gick tillbaks och använde mig till stor del av mos kod. Jag försökte använda mig av den kod som finns i min jQuery-bok men jag lyckades inte få ihop det. Hade framförallt problem med storleken på bilden i kombination med fönstret. Det funkar nu i alla fall.</p>
+
+	<p>För bild-galleriet hade jag verkligen ingen aning ens hur jag skulle börja så jag gjorde som mos. Lite synd att de här övingarna inte var i “tutorial-form” som tidigare utan snarare “gör din egen, om du kan, annars sno min-form”. Hade gärna följt med på hur mos har tänkt här.
+	För slideshow-övningen så kände jag att jag ville följa en tutorial för att göra det från grunden. Så jag följde den <a href="http://www.webchief.co.uk/blog/simple-jquery-slideshow/">här</a>. Den fungerar lite konstigt om inte bilderna är i exakt rätt storlek men annars funkar den som jag hade tänkt.</p>
+
+	<p>För min egen plugin gjorde jag först en animerad header, där bakgrunden rör sig, men jag insåg att den förmodligen inte kan räknas som en jQuery plugin eftersom den använder sig av och är beroende av lite för mycket css och det hade varit svårt att inkorporera den css:en i själva funktionen.
+	Istället gjorde jag en enkel plugin som slajdar en bild upp och ner när man klickar på den. </p>
+
+	<li><strong>Vad tycker du om jQuery, hur känns det?</strong></li>
+
+	<ul>Jag gillar jQuery. Det underlättar sådana saker som är krångligt med ren javascript och förenklar för sådana som mig som helst bara vill sitta med front-end saker och fippla. Det är väl därför som jQuery haft sådan genomslagskraft som det ju faktiskt har haft. Väldigt imponerande att ett enda bibliotek nu används på så många webbplatser, trots att jQuery bara funnits i sju år. </ul>
+
+	<li><strong>Vilka är dina erfarenheter av jQuery inför detta kursmoment?</strong></li>
+
+	<ul>Det är som med javascript i allmänhet; jag har använt det men inte skrivit något själv tidigare. Vissa gånger har jag säkert använt jQuery utan att veta det.</ul>
+
+	<li><strong>Berätta om din plugin.</strong></li>
+
+	<ul>Min plugin är alltså en jätte simpel sak som gör en liten animation på en bild. Den kan förmodligen användas på andra element också men det har jag inte testat. Den använder sig helt enkelt av jQuerys <code>slideUp</code> och <code>slideDown</code>-funktioner. Man kan ställa hur fort animationen skall ske genom att sätta ‘duration’ i millisekunder. </ul>
+
+	<li><strong>Länkar</strong>
+	<ul><a href="../kmom01/lekplats/nine-small-examples-to-get-started-with-jquery/">Nine small examples to get started with jQuery</a></ul>
+	<ul><a href="../html5up-overflow/">Slide Up Down: A jQuery plugin</a></ul>
+	</li>
+	<hr />
+	</div>
+	</div>
+
+	<div class="col_9">
+	<div id="kmom04"><h3>Kursmoment 4</h3>
+	<p>Intressant kursmoment. Känns relevant och nödvändigt och själva Ajax-delen var inte alls så svår som jag hade trott att det skulle vara.</p>
+
+	<p>Jag hade lite problem under den här övningen med att överhuvudtaget visa någonting vid betalningen. Jag tror att det är något problem med <code>php includes</code>. Jag försökte använda mig av mos kod och göra en egen variant utan att få det att fungera först. När jag sedan bara kopierade mos kod helt och hållet hade jag fortfarande samma problem. I Firebug stod det att det var ett nätverksfel, vilket var väldigt konstigt eftersom jag var i localhost. Hursomhelst så gick jag vidare och letade hjälp i forumet och använde mig av en blandning av tidigare studenters lösningar och sedan lite små fix för att få den lösning jag ville ha. Det funkar ganska bra nu.</p>
+
+	<p>På grund av de problem jag hade så använder jag inte <code>CForm</code> överhuvudtaget utan det är bara vanlig, hederlig html. Shopping cart är i princip exakt som mos, med vissa små ändringar. Jag sysselsatte mig lite med att försöka komma på en lösning där man kan ta bort ett specifikt objekt från kundvagnen men jag kom inte på något bra. Vill man kunna ändra något på ett element borde man ju kunna ändra antalet istället för att ta bort alla element av samma typ. Jag har ingen lust att fundera mer på det nu.</p>
+
+	<li><strong>Vad tycker du om Ajax, hur känns det att jobba med?</strong></li>
+
+	<ul>Ajax var ju otroligt smidigt att arbeta med, i alla fall tillsammans med jQuery. Nästan så att det blir för smidigt; det blir nästan så att man känner att man inte har full koll på vad som faktiskt sker i bakgrunden. Men det är väl inte så viktigt, så länge som det fungerar.</ul>
+
+	<li><strong>Vilka är dina erfarenheter av Ajax inför detta kursmoment?</strong></li>
+
+	<ul>Absolut ingenting. Det är möjligt att något ramverk eller template jag använt har Ajax i bakgrunden men då är det utan min vetskap.</ul>
+
+	<li><strong>Berätta om din webbshop på din me-sida, hur gjorde du?</strong></li>
+
+	<ul>Min webbshop är alltså starkt inspirerad av mos, åtminstone kundvagnen. Betalningen sker på ett lite annorlunda sätt men de påminner starkt om varandra. Det är nog en hel del som skiljer sig i koden i betalningsdelen. Jag hade velat haft en smidigare lösning på form valideringen, som jag antar sker i <code>CForm</code>. Nu har jag en massa if-satser i min javascript. Det är inte så snyggt i koden men det blir å andra sidan överskådligt. 
+	Jag kände mig lite begränsad av att använda <code>shop.php</code>. Den hade varit svårt att använda fristående från den övriga filerna, vilket ledde till att i princip hela kundvagnen är exakt som mos. Jag borde försökt mig på en egen lösning av <code>shop.php</code> och göra en tydligare uppdelning och separation av filerna där men det får bli en senare uppgift.
+	Betalningslösningen är jag nöjd med, speciellt att den blinkar medan man kopplar upp sig mot banken.</ul>
+
+	<li><strong>Lyckades du göra extra-uppgiften och paketera din kod?</strong></li>
+	<ul>Vet inte riktigt vad som menas med paketeras i sammanhanget. Jag har inte gjort någon jQuery plugin här. Koden ligger ju i två olika mappar så de är inte paketerade tillsammans. Man borde haft en lösning där man lägger böckerna (eller vad det är man vill sälja) i en databas och hämta dem därifrån. 
+	Så jag antar att svaret på frågan ovan är nej.</ul>
+
+	<li><strong>Länkar</strong>
+	<ul><a href="../kmom01/lekplats/get-marvin-quotes-using-ajax/">Marvin</a></ul>
+	<ul><a href="../kmom01/lekplats/shopping-cart-using-jquery-ajax/">Shopping cart</a></ul>
+	</li>
+	<hr />
 	</div>
 	</div>
 
@@ -166,6 +247,8 @@
 <div class="clear"></div>
 <div id="footer">
 &copy; Copyright 2013 All Rights Reserved. Nah, just fuckin witcha, there aint no copyright. This website was built with <a href="http://www.99lime.com" target="blank">HTML KickStart</a>
+<hr />
+<button onclick="location.href='#'">Go to top</button>
 </div>
 
 </body>

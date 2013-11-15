@@ -18,7 +18,7 @@
   <a href='http://dbwebb.se/forum'>forum</a>
   <a href='http://dbwebb.se/style'>style</a>
   <a href='http://jsfiddle.net/'>jsfiddle</a>
-  <a href='http://jsfiddle.net/user/mikael_roos/fiddles/'>fiddles/mos</a>
+  <a href='http://jsfiddle.net/user/andy_akesson/fiddles/'>fiddles/andy_akesson</a>
   <a href='http://pastebin.com/'>pastebin</a>
   <a href='https://gist.github.com/'>gist</a>
   <a href='http://www.quirksmode.org/compatibility.html'>quirksmode</a>
