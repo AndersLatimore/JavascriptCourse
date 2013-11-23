@@ -1,0 +1,35 @@
+<?php $title='Anders Akesson | Test HTML5 websockets'; 
+include(__DIR__ . '/../mall/header.php'); ?>
+
+<h1>Test HTML5 websockets</h1>
+<p>Open up firebug and see the output in the console.</p>
+<input id='url' value='ws://dbwebb.se:1337'/>
+<button id='connect'>Connect</button>
+ 
+<script>
+var url = document.getElementById('url'),
+    connect = document.getElementById('connect'),
+    websocket;
+ 
+// Event handler to create the websocket connection when someone clicks the button #connect
+connect.addEventListener('click', function(event) {
+  console.log('Connecting to: ' + url.value);
+  websocket = new WebSocket(url.value);
+ 
+  // Eventhandler when the websocket is opened.
+  websocket.onopen = function() {
+    console.log('The websocket is now open.');
+    websocket.send('Thanks for letting me connect to you.');
+  }
+ 
+  websocket.onmessage = function(event) {
+    console.log('Receiving message: ' + event.data);
+  }
+ 
+  // Eventhandler when the websocket is closed.
+  websocket.onclose = function() {
+    console.log('The websocket is now closed.');
+  }
+} , false);
+</script>
+<?php $path=__DIR__; include(__DIR__ . '/../mall/footer.php'); ?>

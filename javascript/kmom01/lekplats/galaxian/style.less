@@ -1,0 +1,65 @@
+/**
+ * Import base style
+ */
+@import "../mall/base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+#flash {
+	height:620px;
+	background: transparent;
+}
+canvas {
+	margin:auto;
+  	position:absolute;
+  	border:1px solid #999;
+  	background: transparent;
+}
+#background {
+  	z-index: -2;
+}
+#main {
+  	z-index: -1;
+}
+#ship {
+  	z-index: 0;
+}
+.score {
+	position: relative;
+	color: #fff;
+	font-family: 'Orbitron', sans-serif;
+	cursor: default;
+}
+.game-over {
+	position: absolute;
+	top:7em;
+	left:14em;
+	color: #fff;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 40px;
+	cursor: default;
+	display: none;
+}
+.game-over span {
+	font-size: 30px;
+	cursor: pointer;
+	position: relative;
+	left: 60px;
+}
+.game-over span:hover {
+	color: #FFD700;
+}
+.loading {
+	position: absolute;
+	top: 300px;
+	left: 600px;
+	color: #FF7F00;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 30px;
+	cursor: default;
+}
+.scoreboard {
+	position: relative;
+	display: none;
+}

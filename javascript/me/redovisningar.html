@@ -56,6 +56,13 @@
 		<li><a href="../kmom01/lekplats/shopping-cart-using-jquery-ajax"><span class="icon" data-icon="">Shopping cart using jQuery and Ajax</span></a></li>
 		</ul>
 	</li>
+	<li class="divider"><span class="icon" data-icon="T"></span></li>
+	<li><a href=""><span class="icon" data-icon="B"></span>Kursmoment 5</a>
+		<ul>
+		<li><a href="../kmom01/lekplats/canvas-animation-spaceship-with-forces"><span class="icon" data-icon="Z">Canvas animation spaceship with forces</span></a></li>
+		<li><a href="../kmom01/lekplats/galaxian"><span class="icon" data-icon="">Galaxian</span></a></li>
+		</ul>
+	</li>
 	<!--<li class="divider"><a href=""><span class="icon" data-icon="T"></span>li.divider</a></li>-->
 	</ul>
 </li>
@@ -65,7 +72,7 @@
 		<li><a href="#kmom02"><span class="icon" data-icon="k"></span>Kursmoment 2</a></li>
 		<li><a href="#kmom03"><span class="icon" data-icon="J"></span>Kursmoment 3</a></li>
 		<li><a href="#kmom04"><span class="icon" data-icon="="></span>Kursmoment 4</a></li>
-		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 5</a></li>
+		<li><a href="#kmom05"><span class="icon" data-icon="="></span>Kursmoment 5</a></li>
 		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 6</a></li>
 		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 7</a></li>
 		</ul>
@@ -234,6 +241,46 @@
 	<li><strong>Länkar</strong>
 	<ul><a href="../kmom01/lekplats/get-marvin-quotes-using-ajax/">Marvin</a></ul>
 	<ul><a href="../kmom01/lekplats/shopping-cart-using-jquery-ajax/">Shopping cart</a></ul>
+	</li>
+	<hr />
+	</div>
+	</div>
+
+	<div class="col_9">
+	<div id="kmom05"><h3>Kursmoment 5</h3>
+	<p>Det här var ett ganska utmanande kursmoment. Mycket att ta in med en hel del tekniker som har varit nya för mig. Jag har läst mycket i de artiklar som ingick i övningen och försökt förstå allting men jag kommer nog att få återkomma och läsa om artiklarna senare för att verkligen få grepp om allting.</p>
+
+	<p>Jag vet inte om jag fått fullständigt grepp om prototyp-baserad programmering. Jag förstår konceptet någorlunda men det känns som att det är lite forcerat. Om det var tanken att språket skulle vara så här från början, det vet jag inte, men det känns som en lösning man kommit fram till p.g.a. att man insåg att man behövde en mer objekt orienterad lösning men att man ville göra på ett nytt sätt. Jag har väldigt svårt att se fördelarna med prototyp-baserad gentemot traditionell objekt orienterad programmering. För mig blev programmeringen mer logisk och lättförståelig när objekt orientering introducerades och det här känns som att man infört en ny nivå av abstraktion istället för att förenkla, vilket borde ha varit målet med en modernt språk. Men jag behåller fortfarande ett öppet sinne och kanske kommer jag att uppskatta prototyp-baserad programmering mer ju mer jag använder det.</p>
+
+	<p>Efter att jag gått igenom mos övning kände jag att det var ganska svåra saker om man verkligen ville göra ett riktigt spel. Så jag bestämde mig för att följa en tutorial så jag letade en som hade just nyckelorden “HTML5”, “canvas”, “prototyp-baserad javascript” och gärna också med “HTML5 Audio”. Jag lyckades också hitta en <a href="http://blog.sklambert.com/galaxian-html5-game/" target="blank">tutorial</a> som gör en klon på spelet “Galaxian” och som använde sig av alla dessa begrepp och att arbeta med den kodbasen har varit mycket lärorikt.</p>
+
+	<p>Problemen jag haft har mest bestått av att hastigheten på spelet har hoppat och varit lite buggigt. Man vill ju att hastigheten skall öka till viss del för att spelet skall bli lite svårare men det har varit lite svårt att få till då hastigheten är olika för de olika elementen i spelet. Det är fortfarande lite buggigt så det är möjligt att jag fortsätter med spelet senare, kanske i projektet.</p>
+
+	<p>Jag hade också problem med ljuden, speciellt i Firefox. Jag vet inte om Firefox har problem med HTML5 Audio men när jag spelar i Firefox blir spelet efter ett tag helt omöjligt då det blir alldeles för ryckigt, men det funkar utan problem i Chrome. I Opera blir spelet väldigt långsamt och i Safari blir det också ryckigt, även om det funkar lite bättre än i Firefox. Jag har inte undersökt de här problemen men uppfattningen jag får är att det har med ljuden att göra. Den som önskar spela hänvisas alltså till Chrome.</p>
+
+	<li><strong>Vilka möjligheter ser du med HTML5 Canvas?</strong></li>
+
+	<ul>Canvas är ju uppenbarligen användbart, speciellt i kombination med bilder och för att kunna rita upp dessa. I spelet använder jag tre nivåer av canvas med olika z-index, där de två översta nivåerna är transparenta vilket gör att man kan lägga element på dem och få det att se ut som en enda nivå. 
+	Jag kan inte låta bli att tänka att det förmodligen kommer att komma en annan typ av lösning på canvas i nästa version av HTML. Det är lite begränsat som det är just nu och det finns utrymme för förbättringar.</ul>
+
+	<li><strong>Hur avancerat gjorde du din spelfysik (om du överhuvudtaget har någon i ditt spel)?</strong></li>
+
+	<ul>Det är ju inte jätte avancerad fysik i mitt spel men det händer i alla fall en hel del. Fienderna flyttar sig i sidled tills man skjuter ner dem. Kulorna får högre fart ju längre spelet pågår, upp till en nivå. Skeppet kan man flytta i sidled och upp och ner.</ul>
+
+	<li><strong>Beskriv och berätta om ditt spel. Förklara hur du använder objekt och prototyper.</strong></li>
+
+	<ul>Först och främst har spelet ett <code>imageRepository</code> som lagrar och läser in bilderna som hör till elementen. Spelet har en lite väl avancerad kollisions kontroll som använder sig av ett quad träd. Det är överdrivet i ett spel som är så här pass enkelt men det gör att spelet blir effektivare och får bättre frame rate. 
+	Jag har en <code>function Drawable</code> som alla andra objekt “ärver” från (vet inte om det kallas ärver i javascript eller om man har ett annat uttryck). Konstruktionen för att göra objekten <code>Drawable</code> ser ut t.ex så här för objektet <code>Ship</code>: <code>Ship.prototype = new Drawable();</code>
+	Objekten <code>Ship</code> och <code>Enemy</code> har en <code>Pool</code> av <code>Bullets</code> som lagras för varje objekt. Denna <code>Pool</code> fylls på när objekten får slut på <code>Bullets</code>. 
+	Det finns mer kommentarer i koden om hur programmet faktiskt fungerar.</ul>
+
+	<li><strong>Gjorde du något på extrauppgiften?</strong></li>
+	<ul>Jag har som sagt hållit på en hel del med ljuden för spelet, då spelet hade varit riktigt tråkigt om det inte hade haft några ljud alls. Problemen jag haft med detta har jag redan beskrivit ovan så det är ingen mening med att älta det igen.</ul>
+
+	<li><strong>Länkar</strong>
+	<ul><a href="http://blog.sklambert.com/galaxian-html5-game/">Tutorialen jag följt</a></ul>
+	<ul><a href="../kmom01/lekplats/canvas-animation-spaceship-with-forces/">Canvas animation spaceship with forces</a></ul>
+	<ul><a href="../kmom01/lekplats/galaxian/">Galaxian</a></ul>
 	</li>
 	<hr />
 	</div>
