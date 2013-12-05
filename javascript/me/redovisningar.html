@@ -41,7 +41,6 @@
 		<li><a href="../kmom01/lekplats/error-handling/"><span class="icon" data-icon="="></span>Error handling</a></li>
 		<li><a href="../kmom01/lekplats/gambling-roulette-using-functions/"><span class="icon" data-icon="="></span>Roulette</a></li>
 		</ul>
-	</li>
 	<li class="divider"><span class="icon" data-icon="T"></span></li>
 	<li><a href=""><span class="icon" data-icon="B"></span>Kursmoment 3</a>
 		<ul>
@@ -63,8 +62,18 @@
 		<li><a href="../kmom01/lekplats/galaxian"><span class="icon" data-icon="">Galaxian</span></a></li>
 		</ul>
 	</li>
+	<li class="divider"><span class="icon" data-icon="T"></span></li>
+	<li><a href=""><span class="icon" data-icon="B"></span>Kursmoment 6</a>
+		<ul>
+		<li><a href="../kmom01/lekplats/echo-server-with-node-js-and-html5-websockets/"><span class="icon" data-icon="Z">Echo server</span></a></li>
+		<li><a href="../kmom01/lekplats/broadcast-server-with-node-js-and-html5-websockets/"><span class="icon" data-icon="">Broadcast server</span></a></li>
+		<li><a href="../kmom01/lekplats/chat-server-with-node-js-and-html5-websockets/"><span class="icon" data-icon="">Chat server</span></a></li>
+		</ul>
+	</li>
+
 	<!--<li class="divider"><a href=""><span class="icon" data-icon="T"></span>li.divider</a></li>-->
 	</ul>
+
 </li>
 <li class="current"><a href=""><span class="icon" data-icon="R"></span>Redovisningar</a>
 		<ul>
@@ -73,7 +82,7 @@
 		<li><a href="#kmom03"><span class="icon" data-icon="J"></span>Kursmoment 3</a></li>
 		<li><a href="#kmom04"><span class="icon" data-icon="="></span>Kursmoment 4</a></li>
 		<li><a href="#kmom05"><span class="icon" data-icon="="></span>Kursmoment 5</a></li>
-		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 6</a></li>
+		<li><a href="#kmom06"><span class="icon" data-icon="="></span>Kursmoment 6</a></li>
 		<li><a href="#"><span class="icon" data-icon="="></span>Kursmoment 7</a></li>
 		</ul>
 <li><a href="http://andyweb.info" target="blank">Andyweb</a></li>
@@ -283,6 +292,39 @@
 	<ul><a href="../kmom01/lekplats/galaxian/">Galaxian</a></ul>
 	</li>
 	<hr />
+	</div>
+	</div>
+
+	<div class="col_9">
+	<div id="kmom06"><h3>Kursmoment 6</h3>
+	<p>Bra kursmoment med saker som kan vara bra att ha på diverse webb applikationer. Jag har arbetat lite med node.js tidigare så jag behövde inte installera någonting initialt utan det var bara att köra på en gång. Jag kommer dock knappt ihåg vad det var jag gjorde med node.js då men jag minns i alla fall att jag försökte göra någon slags chat på min egen webbsida en gång, dock utan att lyckas den gången. Kanske att jag försöker igen, nu när jag faktiskt vet hur man gör.</p>
+
+	<p>Jag följde mos övning till punkt och pricka så koden för sockets ser nog väldigt lika ut som i exemplen. Jag har tittat lite på andra lösningar från andra exempel också och testat lite olika men valde för den här övningen att följa det som gavs i exemplen. Jag har testat alla tre delarna mot min egen server men för enkelhetens och testningens skull så körs alla nu mot dbwebb.</p>
+
+	<p>För chat servern känner jag väl att det fortfarande är lite oklart om en chat server skall ha någon annorlunda funktionalitet än vad en broadcast server skall. En chat server sänder ju också till många. I min version så blev i alla fall chatten väldigt lik broadcast servern, med bara några mindre ändringar. Den fungerar alltså inte alls om en riktig irc-chat, men jag hade heller aldrig som mål att det skulle bli så. Jag har i ärlighetens namn inte så jättestort intresse av att bygga en sådan chat, även om det säkerligen skulle vara lärorikt.</p>
+
+	<li><strong>Vilka möjligheter ser du med HTML5 Websockets?</strong></li>
+	<ul>Det är smidigt med websockets och det verkar enkelt att använda. Det öppnar ju för stora möjligheter att bygga chat funktioner på webben utan att krångla till det alltför mycket. Kan se vissa säkerhetsrisker om man inte säkrar upp den input som man får från t.ex. en chat dock. Men man skapar förstås alltid en möjlighet för utomstående att komma in på ens webbplats när man skapar interaktion på det här sättet, på gott och ont.</ul>
+
+	<li><strong>Vad tycker du om Node.js och hur känns det att programmera i det?</strong></li>
+	<ul>Jag har tidigare tyckt att det har varit lite halv klurigt att koda med node.js och det tycker jag nog fortfarande. Jag vet inte exakt vad det är som gör att det känns krångligt men det känns som att det är mycket som försiggår i bakgrunden som man inte har koll på vilket skapar en viss ovisshet. Kanske behöver jag bara jobba lite mer med det. Det börjar ju bli de-facto standard för att bygga chat-program på webben så man är väl så illa tvungen.</ul>
+
+	<li><strong>Beskriv hur du löste echo-servern och broadcast-servern.</strong></li>
+	<ul>Precis som mos egentligen. Jag har alltså följt övningen ganska slaviskt och när jag avvikt från den vägen har jag följt andra exempel som i princip ser likadana ut.</ul>
+
+	<li><strong>Beskriv och berätta om din chat. Förklara hur du byggde din chat-server och förklara protokollet.</strong></li>
+	<ul>Som jag nämnde så tycker jag att det är lite oklart om en chat server skall fungera på ett annat sätt än vad broadcast servern gör. För mig blir funktionaliteten densamma då ju broadcast servern sänder till många, vilket väl måste vara tanken med en chat server också. Sen vore det förstås bättre om en användare kunde associeras på ett annat sätt mot servern också så att det kan bli mer likt en riktig chat. För mig så ligger nu det som sätter namn på en användare i chatten i main.js filen och inte i själva server delen. Detta kanske borde fungera annorlunda. Men som sagt; lite osäker på hur tanken egentligen är med detta. Jag har inte sett någon i forumet som löst det på något annat sätt än att använda sig av broadcast protokollet heller så det får duga för stunden.</ul>
+
+	<li><strong>Gjorde du något på extrauppgiften?</strong></li>
+	<ul>Nej.</ul>
+
+	<li><strong>Länkar</strong>
+		<ul>
+		<li><a href="../kmom01/lekplats/echo-server-with-node-js-and-html5-websockets/"><span class="icon" data-icon="Z">Echo server</span></a></li>
+		<li><a href="../kmom01/lekplats/broadcast-server-with-node-js-and-html5-websockets/"><span class="icon" data-icon="">Broadcast server</span></a></li>
+		<li><a href="../kmom01/lekplats/chat-server-with-node-js-and-html5-websockets/"><span class="icon" data-icon="">Chat server</span></a></li>
+		</ul>
+	</li>
 	</div>
 	</div>
 
